@@ -32,5 +32,25 @@
 - Docker Engine sits in the background and takes care of building and running docker conatiners. 
 - In simple terms a Container is just a process, similar to other processes running on your computer. They dont have full-blown OS, it shares kernel of the Host. By this we mean, ON LInux Comp, we can only run Linux Containers and the same to other OS
 
+## Development worflow
+- Take app and dockerise it, just add a docker file(so that it can be run by docker)
+## What is a docker file?
+-  Docker file Plain text file that includes instructions that docker uses to package application to an image, the image contains everything our applications needs to run. Typically:
+    - A cut-down os
+    - A runtime environment e.g node
+    - Application files
+    - Third party libraries
+    - Environment variables
+
+
+- So we create a docker file, give it to docker for packaging our application into an image.
+- Once we have the image, we tell docker to start a container using that image. 
+- A container is just a process, however its a special type of process since it has it own file system provided by the application.
+- So our application gets loaded inside a container and this is how we run it locally on our dev machine, `docker run ...` basi cally we tell docker to run it inside a container.
+
+## Beauty of Docker
+- Once we have the image we can push it to Registry such as `Docker Hub`, docker hub to docker is like github to git. Its a storage for docker images that anynone can use. Once our images are on docker hub, we can pull them to any machine running docker.
+
+
 
   
