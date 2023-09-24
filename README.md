@@ -42,7 +42,6 @@
     - Third party libraries
     - Environment variables
 
-
 - So we create a docker file, give it to docker for packaging our application into an image.
 - Once we have the image, we tell docker to start a container using that image. 
 - A container is just a process, however its a special type of process since it has it own file system provided by the application.
@@ -51,6 +50,10 @@
 ## Beauty of Docker
 - Once we have the image we can push it to Registry such as `Docker Hub`, docker hub to docker is like github to git. Its a storage for docker images that anynone can use. Once our images are on docker hub, we can pull them to any machine running docker.
 
+### To See all Images on a computer
+-   `docker image ls`
 
+## Managing Packages
+- We use apt install <package name>
 
-  
+- `Remember` in linux, everything is a file, whether a processes, directories etc
