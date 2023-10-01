@@ -1,5 +1,5 @@
 # Docker
-## What is Docker
+## What is Docker?
 - A platform for building, running and shipping applications in a consistent manner.
 - Docker easily helps pacjage our application with everything it needs and run it anywhere in any machine.
 ### Why use docker?
@@ -12,7 +12,7 @@
 
 ## Virtual Machines and Containers
 - Container is an isolated environment for running and application.
-- `VM` runs on top of host OS like Windows or Linux but `container` does not have access to underlying hardware resources(RAM etc). Basically its and abstraction of a machine.
+- `Virtual Machine` runs on top of host OS like Windows or Linux but `container` does not have access to underlying hardware resources(RAM etc). Basically its and abstraction of a machine.
 
 ### Problems with VM
 - Each VM needs a full-blown OS
@@ -32,9 +32,9 @@
 - Docker Engine sits in the background and takes care of building and running docker conatiners. 
 - In simple terms a Container is just a process, similar to other processes running on your computer. They dont have full-blown OS, it shares kernel of the Host. By this we mean, ON LInux Comp, we can only run Linux Containers and the same to other OS
 
-## Development worflow
+## Development Worflow
 - Take app and dockerise it, just add a docker file(so that it can be run by docker)
-## What is a docker file?
+## What is a Docker File?
 -  Docker file Plain text file that includes instructions that docker uses to package application to an image, the image contains everything our applications needs to run. Typically:
     - A cut-down os
     - A runtime environment e.g node
